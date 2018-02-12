@@ -23,13 +23,8 @@ public class HttpManager {
         String header = input.nextLine();
         System.out.println("header ->" + header);
         String requestType = (header.split(" "))[0];
-        if (requestType.equals("POST")) {
-            System.out.println("PPPPPOOOOSSSTTT!!!!");
-            //return;
-        }
         String address = (header.split(" "))[1];
         if (address.equals("/login")) {
-            System.out.println("IIIIIINNNNNN!!!!");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
